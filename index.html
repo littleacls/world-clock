@@ -4,12 +4,16 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="src/style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,100..900&family=JetBrains+Mono:wght@100..800&display=swap"
+      rel="stylesheet"
+    />
 
     <title>World Clock - by Ana Lucianetti</title>
   </head>
   <body>
-    <h1>World Clock</h1>
-    <div id="container">
+    <div class="container">
+      <h1>World Clock</h1>
       <select id="city-select">
         <option value="">Select a city...</option>
         <option value="America/New_York">New York</option>
@@ -17,19 +21,24 @@
         <option value="Asia/Tokyo">Tokyo</option>
         <option value="Australia/Sydney">Sydney</option>
       </select>
-    </div>
-    <div class="city">
-      <h2>São Paulo</h2>
-      <div class="date">July 7, 2026</div>
-      <div class="time">12:00:00 PM</div>
-    </div>
-    <div class="city">
-      <h2>Lisbon</h2>
-      <div class="date">July 7, 2026</div>
-      <div class="time">5:00:00 AM</div>
+      <div class="city">
+        <div>
+          <h2>São Paulo</h2>
+          <div class="date">July 7, 2026</div>
+        </div>
+        <div class="time">12:00:00 <small>PM</small></div>
+      </div>
+      <div class="city">
+        <div>
+          <h2>Lisbon</h2>
+          <div class="date">July 7, 2026</div>
+        </div>
+        <div class="time">5:00:00 <small>AM</small></div>
+      </div>
     </div>
     <footer>
-      This is a project by Ana Lucianetti. You can find the source code on
+      This is a project coded with ❤️ by Ana Lucianetti. You can find the source
+      code on
       <a href="https://github.com/littleacls/world-clock" target="_blank"
         >GitHub</a
       >.
