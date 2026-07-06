@@ -85,3 +85,13 @@ footer {
 a {
   color: #fff;
 }
+
+.back-link {
+  display: inline-block;
+  margin-top: 20px;
+  color: #0c0f20;
+  font-family: "JetBrains Mono", monospace;
+  font-size: 17px;
+  font-weight: 600;
+  transition: color 0.4s ease;
+}

@@ -23,6 +23,17 @@ function updateTime() {
   chicagoTimeElement.innerHTML = chicagoTime.format(
     "h:mm:ss [<small>]A[</small>]",
   );
+
+  //Dubai
+  let dubaiElement = document.querySelector("#dubai");
+  if (!dubaiElement) {
+    return;
+  }
+  let dubaiDateElement = dubaiElement.querySelector(".date");
+  let dubaiTimeElement = dubaiElement.querySelector(".time");
+  let dubaiTime = moment().tz("Asia/Dubai");
+  dubaiDateElement.innerHTML = dubaiTime.format("LL");
+  dubaiTimeElement.innerHTML = dubaiTime.format("h:mm:ss [<small>]A[</small>]");
 }
 
 function updateCity(event) {
@@ -41,6 +52,7 @@ function updateCity(event) {
       </div>
       <div class="time">${cityTime.format("h:mm:ss [<small>]A[</small>]")}</div>
     </div>
+    <a href="/" class="back-link">Back to cities</a>
   `;
 }
 
